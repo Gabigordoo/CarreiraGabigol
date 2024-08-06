@@ -9,3 +9,15 @@ while senha_salva != senha_digitada:
 
 print(repeticoes)
 print('Aquele laço acima pode ter repetições infinitas') 
+
+
+usando FOR = PARA português 
+
+
+texto = 'Python'
+
+novo_texto = ''
+for letra in texto:
+    novo_texto += f'*{letra}
+    print(letra)
+print(novo_texto + '*')
