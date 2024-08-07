@@ -91,3 +91,62 @@ Sétima Iteração (letra = 'l'):
 print(len(nome)) imprime 7.
 novo_nome se torna '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
 print(novo_nome) imprime '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
+
+
+
+***********************************************************************************************************************
+
+OPERADOR +=
+
+
+O operador += é conhecido como o operador de atribuição composta e é usado para simplificar a adição de um valor a uma variável existente. Em vez de escrever uma expressão que primeiro calcula o novo valor e depois o atribui de volta à variável, o operador += faz isso em uma única operação.
+
+Sintaxe Geral
+python
+Copiar código
+variável += valor
+Isso é equivalente a:
+
+python
+Copiar código
+variável = variável + valor
+Exemplos e Explicações
+Inteiros e Números de Ponto Flutuante:
+
+python
+Copiar código
+x = 5
+x += 3  # Equivalente a x = x + 3
+print(x)  # Saída: 8
+Aqui, x começa com 5, e += 3 adiciona 3 ao valor atual de x, resultando em 8.
+
+Strings:
+
+python
+Copiar código
+texto = "Olá"
+texto += " Mundo"  # Equivalente a texto = texto + " Mundo"
+print(texto)  # Saída: "Olá Mundo"
+Neste caso, texto começa com "Olá", e += " Mundo" concatena " Mundo" ao valor atual de texto, resultando em "Olá Mundo".
+
+Listas:
+
+python
+Copiar código
+lista = [1, 2, 3]
+lista += [4, 5]  # Equivalente a lista = lista + [4, 5]
+print(lista)  # Saída: [1, 2, 3, 4, 5]
+Para listas, += adiciona os elementos da lista à esquerda do operador à lista à direita do operador. Aqui, [4, 5] é adicionado à lista existente [1, 2, 3].
+
+Aplicação no Seu Código
+No código que você forneceu:
+
+python
+Copiar código
+novo_nome += f'*{nome}'
+O operador += está sendo usado para adicionar a string '*Gabriel' à variável novo_nome a cada iteração do loop. A expressão f'*{nome}' é uma f-string que cria a string '*Gabriel'. Então, += concatena essa nova string ao valor atual de novo_nome.
+
+Se novo_nome começa como uma string vazia e você usa += repetidamente dentro de um loop, você está acumulando (ou concatenando) a mesma string várias vezes.
+
+Resumo
+O operador += é uma forma concisa e eficiente de atualizar o valor de uma variável adicionando a ela um novo valor. Ele pode ser usado com números, strings, listas e outros tipos de dados mutáveis em Python.
