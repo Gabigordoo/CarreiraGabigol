@@ -26,3 +26,68 @@ for letra in texto:
     novo_texto += f'*{letra}'
     print(letra)
 print(novo_texto + '*')
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+python
+Copiar código
+nome = 'Gabriel'
+
+novo_nome = ''
+
+for letra in nome:
+    print(len(nome))
+    novo_nome += f'*{nome}'
+
+    print(novo_nome)
+Definição das Variáveis:
+
+nome é uma variável que contém a string 'Gabriel'.
+novo_nome é uma variável que começa como uma string vazia ''.
+Loop for:
+
+O loop for letra in nome itera sobre cada caractere na string 'Gabriel'. Isso significa que a variável letra assume o valor de cada caractere da string em cada iteração (neste caso, 'G', 'a', 'b', 'r', 'i', 'e', 'l').
+Dentro do Loop:
+
+print(len(nome)): Imprime o comprimento da string 'Gabriel', que é sempre 7. Este valor não muda porque nome não é alterado dentro do loop.
+novo_nome += f'*{nome}': Adiciona a string 'Gabriel', precedida por um '*', ao final da variável novo_nome. Assim, a cada iteração, novo_nome recebe mais uma ocorrência da string 'Gabriel', com um '*' à frente.
+print(novo_nome): Imprime o valor atual de novo_nome após cada iteração.
+O que acontece em cada iteração:
+Primeira Iteração (letra = 'G'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel' (inicialmente vazio + '*Gabriel').
+print(novo_nome) imprime '*Gabriel'.
+Segunda Iteração (letra = 'a'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel*Gabriel' (anterior '*Gabriel' + '*Gabriel').
+print(novo_nome) imprime '*Gabriel*Gabriel'.
+Terceira Iteração (letra = 'b'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel*Gabriel*Gabriel'.
+print(novo_nome) imprime '*Gabriel*Gabriel*Gabriel'.
+Quarta Iteração (letra = 'r'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel*Gabriel*Gabriel*Gabriel'.
+print(novo_nome) imprime '*Gabriel*Gabriel*Gabriel*Gabriel'.
+Quinta Iteração (letra = 'i'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
+print(novo_nome) imprime '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
+Sexta Iteração (letra = 'e'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
+print(novo_nome) imprime '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
+Sétima Iteração (letra = 'l'):
+
+print(len(nome)) imprime 7.
+novo_nome se torna '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
+print(novo_nome) imprime '*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel*Gabriel'.
